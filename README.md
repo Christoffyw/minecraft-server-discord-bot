@@ -4,3 +4,12 @@ Look over code and replace SERVER_ADDRESS with the ip and SERVER_PORT with the p
 Also replace BOT_TOKEN with your discord bot's token.
 
 Good luck.
+
+# Required Node JS Packages
+
+To run this code you need the following packages:
+
+Discord.js
+```npm install discord.js```
+Node Fetch
+```npm install node-fetch```
