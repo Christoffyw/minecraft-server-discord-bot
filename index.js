@@ -3,13 +3,16 @@ const Discord = require('discord.js');
 const fetch = require('node-fetch');
 const bot = new Client();
 
+const token = "BOT_TOKEN" // Replace this <---------------------- Example, const token = "sSEjfSEifojsofSEfSJEfioEF"
+const ip = "SERVER_ADDRESS"// Replace this <---------------------- Example, const ip = "mc.hypixel.net"
+const port = "SERVER_PORT" // Replace this <---------------------- Example, const port = "25565"
 
-const url = 'https://mcapi.xdefcon.com/server/192.99.232.92:25600/full/json';
-const url2 = 'https://api.minetools.eu/ping/192.99.232.92/25600';
+const url = 'https://mcapi.xdefcon.com/server/' + ip + ':' + port + '/full/json';
+const url2 = 'https://api.minetools.eu/ping/'ip + '/' + port;
 
 
 //Bot login
-bot.login("NzI0NzU0MDUyMzY1MTU2NTIz.XwR_iw.E2ego8UtksNPSPXdA2ehA47iXmI");
+bot.login(token);
 
 
 //Sets prefix
