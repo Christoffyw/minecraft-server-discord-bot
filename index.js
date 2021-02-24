@@ -15,8 +15,6 @@ const url2 = 'https://api.minetools.eu/ping/'ip + '/' + port;
 bot.login(token);
 
 
-//Sets prefix
-const PREFIX = "rl.";
 
 //Logs bot logged
 bot.on('ready', () => {
@@ -26,32 +24,6 @@ bot.on('ready', () => {
 
 bot.on('message', message => {
 	let args = message.content.slice(PREFIX.length).split(" ");
-	if(message.content == "embedmedaddy") {
-		message.delete();
-		const embed = {
-			"title": "Christoffyw's Car Goal",
-			"description": "᲼᲼᲼᲼᲼᲼",
-			"color": 3434234,
-			"image": {
-			  "url": "https://media.discordapp.net/attachments/640229249533476884/803489213723050024/unknown.png"
-			},
-			"fields": [
-			  {
-				"name": "Items:",
-				"value": "- Sky Blue Octane \n- Sky Blue Esoto 4R Inverted\n- Stipple Gait"
-			  },
-			  {
-				"name": "Prices:",
-				"value": "~ 2200 CR\n~ 60 CR\n~ 1700 CR"
-			  },
-			  {
-				"name": "Total: ~3960 CR",
-				"value": "᲼᲼᲼᲼᲼᲼"
-			  }
-			]
-		  };
-		  message.channel.send({ embed });
-	}
 	if(message.content.startsWith("!who")) {
 		if(message.channel.id == "720277340231565422") {
 			return message.delete();
